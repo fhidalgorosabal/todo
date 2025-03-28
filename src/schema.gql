@@ -2,9 +2,16 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Todo {
+  id: Int!
+  description: String!
+  done: Boolean!
+}
+
 type Query {
   """Returns a hello world message"""
   hello: String!
   randomNumber: Float!
   randomFromZeroTo(to: Int): Int!
+  findAll: [Todo!]!
 }
