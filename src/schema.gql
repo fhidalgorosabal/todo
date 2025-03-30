@@ -14,4 +14,5 @@ type Query {
   randomNumber: Float!
   randomFromZeroTo(to: Int): Int!
   todos: [Todo!]!
+  todo(id: Int!): Todo!
 }
