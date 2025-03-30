@@ -13,5 +13,5 @@ type Query {
   hello: String!
   randomNumber: Float!
   randomFromZeroTo(to: Int): Int!
-  findAll: [Todo!]!
+  todos: [Todo!]!
 }
